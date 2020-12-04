@@ -1,0 +1,172 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-image: url(images/bg-pattern-top-desktop.svg),url(images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat,no-repeat;
+  background-position: top left,bottom right;
+  background-size: auto,contain;
+}
+
+h1{
+  font-family: 'Spartan',sans-serif;
+  font-size: 2.8rem;
+}
+
+p{
+  font-size: 0.84rem;
+  font-family: 'Montserrat',sans-serif;
+  line-height: 1.6;
+}
+
+#top-half{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 7% 10% 5%;
+}
+
+.stats{
+  padding-right: 30%;
+}
+.stats h1{
+  color:hsl(300, 43%, 22%);
+  margin: 0;
+  line-height: 1;
+}
+
+.stats p{
+  color: #8f8f8f;
+  font-weight: lighter;
+}
+
+.ratings-flex-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.ratings{
+  background-color: hsl(300, 24%, 96%);
+  width: 60%;
+  border-radius: 7px;
+  padding: 15px 25px;
+}
+
+.ratings-text{
+  display: inline;
+  margin-left: 20px; /*margin from star*/
+  color: hsl(300, 43%, 22%);
+  font-weight: bold;
+}
+
+.rating1{
+  align-self: flex-start;
+}
+
+.rating2{
+  align-self: center;
+}
+
+.rating3{
+  align-self: flex-end;
+}
+
+/* Testimonials */
+
+#testimonials{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding: 0 10%;
+  column-gap: 2.5%;
+}
+
+/* .testimonials-flex-container{
+  display: flex;
+  justify-content: space-between;
+  height: 290px;
+} */
+
+.card{
+  /* width: 76%; */
+  background-color:hsl(300, 43%, 22%);
+  color: #fff;
+  padding: 9%;
+  border-radius: 7px;
+}
+
+.card-header{
+  overflow: auto;
+  margin-bottom: 28px;
+}
+
+.card-image{
+  width: 15%;
+  border-radius: 100%;
+  float: left;
+  margin-right: 20px;
+
+}
+
+.card-header p{
+  margin: 0;
+  font-size: 1rem;
+}
+
+.card-header span{
+  color: hsl(333, 80%, 67%);
+}
+
+.card1{
+  align-self: start;
+}
+
+.card2{
+  align-self: center;
+  /* margin-top: 15px; */
+}
+
+.card3{
+  align-self: end;
+  margin-top: 30px;
+}
+
+/* footer */
+#footer{
+  padding-top: 25px;
+}
+
+/* Media Queries */
+@media (max-width:850px) {
+  #top-half{
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+
+  .stats{
+    padding: 10% 0;
+
+  }
+
+  .ratings-flex-container{
+    display: block;
+  }
+
+  .ratings{
+    width: auto;
+    margin: 20px auto;
+  }
+
+  .ratings-text{
+    display: block;
+    margin: 10px 0;
+  }
+
+  #testimonials{
+    display: block;
+  }
+
+  .card{
+    margin: 20px auto;
+  }
+
+}
